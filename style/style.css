@@ -1,0 +1,555 @@
+/*Fonts **********************************************/
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('../fonts/Gilroy-Bold.eot') format('embedded-opentype'), 
+         url('../fonts/Gilroy-Bold.woff2') format('woff2'), 
+         url('../fonts/Gilroy-Bold.woff') format('woff'), 
+         url('../fonts/Gilroy-Bold.ttf')  format('truetype');
+         font-weight: 700;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('../fonts/Gilroy-Regular.eot') format('embedded-opentype'), 
+         url('../fonts/Gilroy-Regular.woff2') format('woff2'), 
+         url('../fonts/Gilroy-Regular.woff') format('woff'), 
+         url('../fonts/Gilroy-Regular.ttf')  format('truetype');
+         font-weight: 400;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: url('../fonts/Gilroy-Semibold.eot') format('embedded-opentype'), 
+         url('../fonts/Gilroy-Semibold.woff2') format('woff2'), 
+         url('../fonts/Gilroy-Semibold.woff') format('woff'), 
+         url('../fonts/Gilroy-Semibold.ttf')  format('truetype');
+         font-weight: 600;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Nekst-Bold';
+    src: url('../fonts/Nekst-Bold.eot') format('embedded-opentype'), 
+         url('../fonts/Nekst-Bold.woff2') format('woff2'), 
+         url('../fonts/Nekst-Bold.woff') format('woff'), 
+         url('../fonts/Nekst-Bold.ttf')  format('truetype');
+         font-weight: 700;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Nekst-Regular';
+    src: url('../fonts/Nekst-Regular.eot') format('embedded-opentype'), 
+         url('../fonts/Nekst-Regular.woff2') format('woff2'), 
+         url('../fonts/Nekst-Regular.woff') format('woff'), 
+         url('../fonts/Nekst-Regular.ttf')  format('truetype');
+         font-weight: 400;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Nekst-SemiBold';
+    src: url('../fonts/Nekst-SemiBold.eot') format('embedded-opentype'), 
+         url('../fonts/Nekst-SemiBold.woff2') format('woff2'), 
+         url('../fonts/Nekst-SemiBold.woff') format('woff'), 
+         url('../fonts/Nekst-SemiBold.ttf')  format('truetype');
+         font-weight: 600;
+         font-style: normal;
+}
+
+/*Burger **********************************************/
+.menu {
+    width: 100%;
+    height: 100vh;
+    right: -100%;
+    top: 0;
+    position: fixed;
+    background: linear-gradient(250.6deg, rgba(3, 176, 71, 0.8) -49.48%, #03B047 100%);
+    transition: 0.7s;
+    z-index: 11;
+    padding: 55px 30px;
+    box-sizing: border-box;
+}
+.open_menu {
+    right: 0;
+}
+.menu .close {
+    width: 34px;
+    height: 22px;
+    margin-left: auto;
+}
+.openBurger {
+    display: none;
+}
+.headerNavigationBurger {
+    display: flex;
+    flex-direction: column;
+} 
+/*Header **********************************************/
+.wrapper {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: 'Nekst-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 140%;
+    color: #111B25;
+}
+a {
+    text-decoration: none;
+}
+header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 90px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(80, 80, 80, 0.25);
+    border-radius: 0px 0px 20px 20px;
+}
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.logotype {
+    display: flex;
+    align-items: center;
+}
+.logotype span {
+    font-family: 'Nekst-Bold', sans-serif;
+    font-size: 25px;
+    line-height: 110%;
+    letter-spacing: 0.05em;
+    color: #111B25;
+}
+.logotype img {
+    margin-right: 3px;
+}
+.logotype .logoTextGreen {
+    color: #03B047;
+    margin-left: -4px;
+}
+.headerNavigation {
+    display: flex;
+    align-items: center;
+}
+.headerNavigation li {
+    margin-right: 30px;
+}
+.headerNavigation li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+.headerNavigation li a{
+    font-size: 18px;
+    line-height: 22px;
+    color: #111B25;
+    transition: all 0.3s;
+}
+.headerNavigation li a:hover {
+    color: #03B047;
+    transition: all 0.3s;
+}
+.registrationBtn {
+    padding: 12px 100px;
+    background: #03B047;
+    border-radius: 30px;
+    font-family: 'Gilroy-Semibold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+.registrationBtn:hover {
+    background: transparent;
+    border: 2px solid #03B047;
+    color: #03B047;
+    transition: all 0.3s;
+}
+.navigationFlex {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+}
+
+/*Banner **********************************************/
+.banner {
+    background: linear-gradient(250.6deg, rgba(3, 176, 71, 0) -49.48%, #03B047 100%);
+    padding: 186px 0 96px 0;
+}
+.banner .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bannerLeft {
+    width: 40%;
+}
+h1 {
+    font-family: 'Nekst-Bold', sans-serif;
+    font-size: 70px;
+    line-height: 110%;
+    color: #FFFFFF;
+    margin-bottom: 21px;
+}
+.bannerLeft p {
+    font-family: 'Nekst-Regular', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.bannerRight {
+    background: #FFFFFF;
+    box-shadow: 4px 7px 20px rgba(80, 80, 80, 0.25);
+    border-radius: 20px;
+    position: relative;
+}
+.rangeSliderRightContainer {
+    padding: 40px 30px;
+}
+.sliderContainerText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sliderContainerText p {
+    font-family: 'Gilroy-Bold';
+    font-size: 22px;
+    line-height: 27px;
+    color: #353535;
+}
+.rangeSliderRightContainer {
+    width: 410px;
+}
+#innerMoney,
+#innerDate {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 22px;
+    line-height: 27px;
+    color: #353535; 
+}
+.innerBorder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.innerBorder p {
+    font-family: 'Gilroy-Regular';
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(86, 86, 86, 0.7);
+}
+#valueMoney,
+#valueDate {
+    width: 100%;
+}
+.sliderMoney {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 20px;
+}
+input[type="range"]{
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: rgba(86, 86, 86, 0.2);
+    border-radius: 6px;
+    border-radius: 100px;
+    outline: none;
+    margin-top: 25px;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 6px;
+}
+input[type="range"]::-moz-track{
+    -moz-appearance: none;
+    height: 6px;
+}
+input[type="range"]::-ms-track{
+    appearance: none;
+    height: 6px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    background: url(../img/cursor.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-top: -18px;
+}
+.calcResultBtn {
+    padding: 15px;
+    background: #03B047;
+    border-radius: 30px;
+    width: 100%;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    width: 100%;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.calcResultBtn:hover {
+    border: 2px solid #03B047;
+    color: #03B047;
+    background: transparent;
+}
+.calcResult {
+    background: rgba(86, 86, 86, 0.06);
+    padding: 40px 30px;
+}
+.promo {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #353535;
+    border-bottom: 2px dotted #353535;
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+}
+.calcResultProcent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.containerCalc {
+    margin-top: 20px;
+}
+.calcResultProcent {
+    margin-bottom: 15px;
+}
+.calcResultProcent p {
+    font-family: 'Gilroy-Regular', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #565656;
+}
+.bols {
+    font-family: 'Gilroy-SemiBold', sans-serif !important;
+    font-size: 18px !important;
+}
+#c1{
+    display: none;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 340px;
+    left: -140px;
+    width: 379px;
+    height: 524px;
+  }
+  #c2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 380px;
+    left: -145px;
+    width: 368px;
+    height: 669px;
+    display: none;
+  }
+ .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ } 
+.bannerMobileImg {
+    display: none;
+}
+.headerNavigationBurger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.headerNavigationBurger li  {
+    margin-bottom: 20px;
+}
+.headerNavigationBurger li a {
+    font-family: 'Nekst-Bold', sans-serif;
+    font-size: 46px;
+    line-height: 55px;
+    color: #FFFFFF;
+    text-align: center;
+}
+.menu .registrationBtn {
+    width: 100%;
+    border: 2px solid #FFFFFF;
+    color: #fff;
+    font-size: 46px;
+    line-height: 55px;
+    background: transparent;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 0 32px;
+        box-sizing: border-box;
+    }
+    .headerNavigation li a {
+        font-size: 16px;
+    }
+    .registrationBtn {
+        padding: 12px 50px;
+    }
+    .bannerLeft {
+        position: relative;
+        z-index: 2;
+    }
+}
+@media (max-width: 992px) {
+    .navigationFlex {
+        flex-direction: column;
+        width: 65%;
+    }
+    header {
+        height: 130px;
+    }
+    .headerNavigation {
+        margin-bottom: 16px;
+    }
+    .banner .wrapper {
+        flex-direction: column;
+    }
+    .bannerLeft {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+    .bannerRight {
+        margin-left: auto;
+    }
+    .rangeSliderRightContainer {
+        width: 350px;
+    }
+}
+@media (max-width: 767px) {
+    .navigationFlex {
+        display: none;
+    }
+    .openBurger {
+        display: block;
+    }
+    .parallax {
+        display: none;
+    }
+    .rangeSliderRightContainer {
+        width: 410px;
+    }
+    .bannerRight {
+        margin: 0 auto;
+    }
+    .bannerMobileImg {
+       display: block;
+       position: absolute;
+       top: -195px;
+       right: 0;
+    }
+    .bannerLeft {
+        margin-bottom: 64px;
+        text-align: left;
+    }
+}
+@media (max-width: 576px) {
+    .wrapper {
+        padding: 0 16px;
+    }
+    header {
+        height: 70px;
+    }
+    .banner {
+        padding: 100px 0 36px 0;
+    }
+    h1 {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 110%;
+        width: 80%;
+    }
+    .bannerLeft p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .bannerLeft {
+        margin-bottom: 100px;
+    }
+    .bannerRight {
+        width: 100%;
+    }
+    .rangeSliderRightContainer {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 30px 16px;
+    }
+    .bannerLeft p {
+        width: 65%;
+    }
+    .headerNavigationBurger li a {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .menu .registrationBtn {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .menu {
+        padding: 25px 15px;
+    }
+}
+@media (max-width: 375px) {
+    .calcResultBtn {
+        width: max-content;
+        margin: 16px auto;
+        display: block;
+    }
+    .calcResult {
+        padding: 16px;
+    }
+    .headerNavigationBurger li a {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .menu .registrationBtn {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}

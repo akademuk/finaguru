@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.svg" type="image/svg" sizes="16x16">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>finaguru</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logotype">
+                <a href="#">
+                    <img src="img/logo.svg" alt="finaguru">
+                    <span class="logoTextBlack">fina</span>
+                    <span class="logoTextGreen">guru</span>
+                </a>
+            </div>
+            <div class="navigationFlex">
+                <ul class="headerNavigation">
+                    <li>
+                        <a href="index.html" style="font-weight: 700;">Головна</a>
+                    </li>
+                    <li>
+                        <a href="conditions.html">Умови</a>
+                    </li>
+                    <li>
+                        <a href="questions.html">Питання та відповіді</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Блог</a>
+                    </li>
+                </ul>
+                <button class="registrationBtn">Реєстрація</button>
+            </div>
+            <div class="openBurger">
+                <img src="img/burger.svg" alt="burger">
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="wrapper">
+            <div class="bannerLeft">
+                <h1>Кредит онлайн на картку</h1>
+                <p>До 15 000 грн під 0,01% на день</p>
+            </div>
+            <div class="bannerRight" id="fields">
+                <img src="img/bunnerMobile.png" alt="finaguru" class="bannerMobileImg">
+                 <div class="parallax">
+                    <div id="c1" class="image"><img src="img/bannerImg.png" alt="finaguru"/></div>
+                    <div id="c2" class="image"><img src="img/bannerSroll.png" alt="finaguru"/></div>
+                </div>
+                <div class="rangeSliderRightContainer">
+                    <div class="sliderMoney">
+                        <div class="sliderContainerText">
+                            <p>Сума позики</p>
+                            <div id="innerMoney">0</div>
+                        </div>
+                        <div class="innerBorder">
+                            <p>від 500,00 грн.</p>
+                            <p>до 15 000,00 грн.</p>
+                        </div>
+                        <input type="range" id="valueMoney" min="500" max="15000" value="0" step="100" oninput="rangeMoney()">
+                    </div>
+                    <div class="sliderDate">
+                        <div class="sliderContainerText">
+                            <p>Срок платежу</p>
+                            <div id="innerDate">0</div>
+                        </div>
+                        <div class="innerBorder">
+                            <p>від 2 днів</p>
+                            <p>до 30 днів</p>
+                        </div>
+                        <input type="range" id="valueDate" min="2" max="30" value="0" oninput="rangeMoney()">
+                    </div>
+                </div>
+                <form action="" class="calcResult">
+                    <input type="submit" class="calcResultBtn" value="Отримати гроші">
+                    <a href="#" class="promo">Є промокод?</a>
+                    <div class="containerCalc">
+                        <div class="calcResultProcent">
+                            <p>Бажана сумма:</p>
+                            <p id="resultSum"></p>
+                        </div>
+                        <div class="calcResultProcent">
+                            <p>Відсотки:</p>
+                            <p id="resultPercent"></p>
+                        </div>
+                        <div class="calcResultProcent">
+                            <p>Дата оплати:</p>
+                            <p id="resultDate"></p>
+                        </div>
+                        <div class="calcResultProcent">
+                            <p>Сумма до повернення:</p>
+                            <p id="resultCalc" class="bols"></p>
+                        </div>
+                    </div>
+                </form>
+               
+                <!-- <div class="calcResult">
+                    <a href="#" class="promo">Є промокод?</a>
+                    <div class="containerCalc">
+                        <div class="calcResultProcent">
+                            <p>Бажана сумма:</p>
+                            <p id="resultSum"></p>
+                        </div>
+                        <div class="calcResultProcent">
+                            <p>Відсотки:</p>
+                            <p id="resultPercent"></p>
+                        </div>
+                        <div class="calcResultProcent">
+                            <p>Дата оплати:</p>
+                            <p id="resultDate"></p>
+                        </div>
+                        <div class="calcResultProcent">
+                            <p>Сумма до повернення:</p>
+                            <p id="resultCalc" class="bols"></p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="close">
+            <svg width="34" height="22" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#222222"/>
+            </svg>
+        </div>
+        <ul class="headerNavigationBurger">
+            <li>
+                <a href="index.html" style="font-weight: 700;">Головна</a>
+            </li>
+            <li>
+                <a href="conditions.html">Умови</a>
+            </li>
+            <li>
+                <a href="questions.html">Питання та відповіді</a>
+            </li>
+            <li>
+                <a href="blog.html">Блог</a>
+            </li>
+        </ul>
+        <button class="registrationBtn">Реєстрація</button>
+    </div>
+      
+      
+
+
+<!-- 
+    <script src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script src="srcipt/burger.js"></script>
+    <script src="srcipt/contactform.js"></script>
+    <script src="srcipt/range-slider.js"></script>
+    <script src="srcipt/banerAnimation.js"></script>
+</body>
+</html>
