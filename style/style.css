@@ -120,6 +120,7 @@ a {
 .showContainerSection svg{
     position: absolute;
     right: 14px;
+    cursor: pointer;
     top: 14px;
 }
 .showContent {
@@ -355,6 +356,26 @@ input[type="range"]::-ms-track{
     height: 6px;
 }
 input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    background: url(../img/cursor.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-top: -18px;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 50px;
+    width: 50px;
+    background: url(../img/cursor.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    margin-top: -18px;
+}
+input[type="range"]::-ms-thumb{
     -webkit-appearance: none;
     height: 50px;
     width: 50px;
@@ -979,26 +1000,199 @@ input[type="range"]::-webkit-slider-thumb{
     top: 0;
     z-index: -1;
 }
+.services {
+    padding: 140px 0 0 0;  
+}
+.services {
+    display: flex;
+    flex-direction: column;
+}
+.services  h2 {
+    font-family: 'Nekst-Bold', sans-serif;
+    font-size: 46px;
+    line-height: 55px;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+}
+.servicesContent {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.servicesContent p {
+    font-family: 'Nekst-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #111B25;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(101, 101, 101, 0.25);
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+}
+.servicesContent p:hover {
+    background: transparent;
+    border: 1px solid #03B047;
+    transition: all 0.3s;
+    color: #fff;
+    cursor: pointer;
+}
+.servicesAccardion {
+    display: none;
+}
+.accordion {
+    max-width: 100%;
+    margin-top: 30px;
+}
+.heading {
+    background: #FFFFFF;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #EDEDED;
+    min-height: 62px;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+    font-family: 'Nekst-Regular', sans-serif;
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 50px;
+    line-height: 150%;
+    color: #111B25;
+    position: relative;
+}
+.services {
+    width: 100%;
+}
+.heading:nth-last-child(2){
+    border-bottom:0; 
+}
+.heading::before {
+    content: '';
+    background: url(../img/acardionArrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 24px;
+    display: flex;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.active.heading::before {
+    transform: rotate(-180deg);
+}
+.not-active.heading::before {
+    transform: rotate(0deg);
+}
+.contents {
+	display: none;
+	background: #FFFAFA;
+	padding: 15px;
+    font-family: 'Nekst-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #111B25;
+}
+.calculator {
+    position: relative;
+}
+.calculatorTel {
+    position: absolute;
+    right: 5px;
+    bottom: 100px;
+}
+.calculatorTel a {
+    width: 70px;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(80, 80, 80, 0.25);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculatorTel a img {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+}
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+    border-bottom: 1px solid #EDEDED;
+}
+.footerTopContainer {
+    display: flex;
+    width: 80%;
+}
+.footerTopContainer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 
+}
+.footerTopContainer ul li {
+    width: 50%;
+    margin-bottom: 12px;
+}
+.footerTopContainer ul:nth-of-type(1) {
+    width: 350px;
+}
+.footerTopContainer ul li a {
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 16px;
+    line-height: 19px;
+    color: #111B25;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footerTopContainer ul:nth-of-type(2) li:nth-of-type(1) {
+    width: 30%;
+}
+.footerTopContainer ul:nth-of-type(2) li:nth-of-type(3) {
+    width: 30%;
+}
+.footerCenter {
+    display: flex;
+    align-items: flex-start;
+    padding: 40px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid #EDEDED;
+}
+.footerCenterText {
+    width: 32%;
+}
+.footerCenterText p {
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 14px;
+    line-height: 140%;
+    color: #111B25;
+}
+.footerCenterText h3 {
+    font-family: 'Gilroy-Bold', sans-serif !important;
+    font-size: 14px;
+    line-height: 140%;
+    color: #111B25;
+    margin: 4px 0;
+}
+.footerBottom {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+.footerBottom a {
+    font-family: 'Gilroy-Bold', sans-serif !important;
+    font-size: 14px;
+    line-height: 140%;
+    color: #111B25;
+}
 
 
 
@@ -1060,6 +1254,12 @@ input[type="range"]::-webkit-slider-thumb{
         max-width: 100%;
         padding: 0 32px;
         box-sizing: border-box;
+    }
+    .footerTopContainer {
+        flex-direction: column;
+    }
+    .footerTopContainer ul{
+        width: 100% !important;
     }
     .headerNavigation li a {
         font-size: 16px;
@@ -1191,6 +1391,9 @@ input[type="range"]::-webkit-slider-thumb{
     .rangeSliderRightContainer {
         width: 410px;
     }
+    .calculatorTel {
+        bottom: 10px;
+    }
     .bannerRight {
         margin: 0 auto;
     }
@@ -1257,6 +1460,12 @@ input[type="range"]::-webkit-slider-thumb{
     .partnersSlider .slick-list .slick-track {
         display: flex ;
     }
+    .servicesContent {
+        display: none;
+    }
+    .servicesAccardion {
+        display: block;
+    }
 }
 @media (max-width: 576px) {
     .wrapper {
@@ -1288,6 +1497,10 @@ input[type="range"]::-webkit-slider-thumb{
     .conditions h2 {
         font-size: 30px;
         line-height: 36px;
+    }
+    .services h2 {
+        font-size: 30px;
+        line-height: 36px; 
     }
     .credit h2 {
         font-size: 30px;
@@ -1418,6 +1631,19 @@ input[type="range"]::-webkit-slider-thumb{
     .workBottomSection img {
         width: 50px;
         height: 50px;
+    }
+    .reviewsSlider {
+        width: 100% !important;
+    }
+    .reviewsItemAvatarText {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .conditionsContentSectionTittle p {
+        font-size: 10px;
+    }
+    .conditionsContentSection p {
+        font-size: 10px;
     }
     .popup h3 {
         font-size: 18px;
