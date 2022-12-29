@@ -773,6 +773,8 @@ input[type="range"]::-ms-thumb{
     box-sizing: border-box;
     min-width: 8px;
     min-height: 13px;
+    max-width: 8px;
+    max-height: 13px;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     background: transparent;
@@ -2183,6 +2185,12 @@ main h2 {
     .articlePageItemSection p {
         font-size: 14px;
     }
+    .partnersSlider  {
+        width: 100%;
+        border-radius: 20px;
+        height: 134px;
+    }
+
     .microMainContent p {
         font-size: 14px;
     }
@@ -2231,9 +2239,6 @@ main h2 {
     }
     .calculator {
         overflow: hidden;
-    }
-    .partnersSliderItem {
-        width: 100%;
     }
     .suggestionsPage h2 {
         font-size: 30px;
@@ -2390,9 +2395,6 @@ main h2 {
     .partnersSlider {
         overflow: hidden;
     }
-    .partnersSliderItem {
-        width: 100% !important;
-    }
     .partnersSlider .slick-slide {
         width: 100%;
     }
@@ -2404,6 +2406,9 @@ main h2 {
     }
     .questionsMain {
         padding-top: 70px;
+    }
+    .partnersSliderDots {
+        margin-top: 30px;
     }
     .heading {
         text-align: left;
