@@ -368,7 +368,7 @@ input[type="range"]::-webkit-slider-thumb{
     background-size: cover;
     cursor: pointer;
     margin-top: -18px;
-    border: none;
+    border: 0 !important;
     box-shadow: inset;
 }
 input[type="range"]::-moz-range-thumb{
@@ -380,7 +380,7 @@ input[type="range"]::-moz-range-thumb{
     background-size: cover;
     cursor: pointer;
     margin-top: -18px;
-    border: none;
+    border: 0 !important;
     box-shadow: inset;
 }
 input[type="range"]::-ms-thumb{
@@ -392,7 +392,7 @@ input[type="range"]::-ms-thumb{
     background-size: cover;
     cursor: pointer;
     margin-top: -18px;
-    border: none;
+    border: 0 !important;
     box-shadow: inset;
 }
 .calcResultBtn {
