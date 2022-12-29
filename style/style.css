@@ -361,33 +361,39 @@ input[type="range"]::-ms-track{
 }
 input[type="range"]::-webkit-slider-thumb{
     -webkit-appearance: none;
-    height: 30px;
-    width: 30px;
-    background: url(../img/cursor.svg), transparent;
+    height: 50px;
+    width: 50px;
+    background: url(../img/cursor.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
     margin-top: -18px;
+    border: none;
+    box-shadow: inset;
 }
 input[type="range"]::-moz-range-thumb{
     -webkit-appearance: none;
-    height: 30px;
-    width: 30px;
-    background: url(../img/cursor.svg), transparent;
+    height: 50px;
+    width: 50px;
+    background: url(../img/cursor.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
     margin-top: -18px;
+    border: none;
+    box-shadow: inset;
 }
 input[type="range"]::-ms-thumb{
     -webkit-appearance: none;
-    height: 30px;
-    width: 30px;
-    background: url(../img/cursor.svg), transparent;
+    height: 50px;
+    width: 50px;
+    background: url(../img/cursor.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
     margin-top: -18px;
+    border: none;
+    box-shadow: inset;
 }
 .calcResultBtn {
     padding: 15px;
