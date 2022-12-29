@@ -1,29 +1,23 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    if (window.matchMedia("(max-width: 576px)").matches) {
     $('.partnersSlider').slick({
-        // infinite: true,
-        // slidesToShow: 3,
-        // slidesToScroll: 1,
-        // dots: false,
-        // arrows: false,
-        // prevArrow: $('.partnersSliderPrev'),
-        // nextArrow: $('.partnersSliderNext'),
-        // appendDots: $('.partnersSliderDots'),
-        settings: "unslick",
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: 9999,
-                settings: "unslick"
-            },
-            {
-                breakpoint: 767,
-                 settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-            }
-        ]
-    });
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    variableWidth: true,
+    appendDots: $('.partnersSliderDots'),
+    responsive: [
+    {
+        breakpoint: 576,
+        settings: {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+        }
+    },
+    ]
+}); 
+} 
 });
+

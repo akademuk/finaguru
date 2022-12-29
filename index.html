@@ -310,6 +310,7 @@
                         <img src="img/partner7.png" alt="Київстар">
                     </div>
                 </div>
+                <div class="partnersSliderDots"></div>
             </div>
             <div class="conditions">
                 <h2>Умови кредитного продукту</h2>
@@ -422,24 +423,24 @@
                     <div class="sliderMoney">
                         <div class="sliderContainerText">
                             <p>Сума позики</p>
-                            <div id="innerMoney">0</div>
+                            <div id="innerMoney2">0</div>
                         </div>
                         <div class="innerBorder">
                             <p>від 500,00 грн.</p>
                             <p>до 15 000,00 грн.</p>
                         </div>
-                        <input type="range" id="valueMoney" min="500" max="15000" value="0" step="100" oninput="rangeMoney()">
+                        <input type="range" id="valueMoney2" min="500" max="15000" value="0" step="100" oninput="rangeMoney2()">
                     </div>
                     <div class="sliderDate">
                         <div class="sliderContainerText">
                             <p>Срок платежу</p>
-                            <div id="innerDate">0</div>
+                            <div id="innerDate2">0</div>
                         </div>
                         <div class="innerBorder">
                             <p>від 2 днів</p>
                             <p>до 30 днів</p>
                         </div>
-                        <input type="range" id="valueDate" min="2" max="30" value="0" oninput="rangeMoney()">
+                        <input type="range" id="valueDate2" min="2" max="30" value="0" oninput="rangeMoney2()">
                     </div>
                 </div>
                 <form action="" class="calcResult">
@@ -448,19 +449,22 @@
                     <div class="containerCalc">
                         <div class="calcResultProcent">
                             <p>Бажана сумма:</p>
-                            <p id="resultSum"></p>
+                            <div class="calcFlex">
+                                <p id="resultSum2"></p>
+                                <p class="redText">2 277 грн.</p>
+                            </div>
                         </div>
                         <div class="calcResultProcent">
                             <p>Відсотки:</p>
-                            <p id="resultPercent"></p>
+                            <p id="resultPercent2"></p>
                         </div>
                         <div class="calcResultProcent">
                             <p>Дата оплати:</p>
-                            <p id="resultDate"></p>
+                            <p id="resultDate2"></p>
                         </div>
                         <div class="calcResultProcent">
                             <p>Сумма до повернення:</p>
-                            <p id="resultCalc" class="bols"></p>
+                            <p id="resultCalc2" class="bols"></p>
                         </div>
                     </div>
                 </form>
@@ -615,5 +619,6 @@
     <script src="srcipt/sliderPartners.js"></script>
     <script src="srcipt/accardin.js"></script>
     <script src="srcipt/animation.js"></script>
+    <script src="srcipt/calculator.js"></script>
 </body>
 </html>

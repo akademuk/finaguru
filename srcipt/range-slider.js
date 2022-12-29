@@ -24,7 +24,6 @@ function rangeMoney(){
     let res = (summ - Number(valueMoney.value))
     sum.textContent = Math.ceil(res) + " грн.";
     
-
     resultCalc.textContent = (Number(valueMoney.value) + Math.ceil(res)) + " грн.";
 
     let sumDate = document.getElementById("resultDate");
