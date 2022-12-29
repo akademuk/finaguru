@@ -38,6 +38,14 @@ $(document).ready(function(){
                 slidesToShow: 1,
             }
         },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToScroll: 1,
+                slidesToShow: 1,
+                
+            }
+        },
         ]
     });
 });
