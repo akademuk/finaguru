@@ -186,6 +186,7 @@ header {
     background: #FFFFFF;
     box-shadow: 4px 4px 20px rgba(80, 80, 80, 0.25);
     border-radius: 0px 0px 20px 20px;
+    z-index: 3;
 }
 header .wrapper {
     display: flex;
@@ -1234,7 +1235,7 @@ main .wrapper {
     box-sizing: border-box;
 }
 main {
-    padding: 100px 0 130px 0;
+    padding: 200px 0 130px 0;
     position: relative;
 }
 .policyNavigation a {
@@ -1496,7 +1497,7 @@ main h2 {
         width: 410px;
     }
     .calculatorTel {
-        bottom: 10px;
+        bottom: 35px;
     }
     .bannerRight {
         margin: 0 auto;
