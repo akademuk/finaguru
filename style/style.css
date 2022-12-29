@@ -67,6 +67,24 @@
     padding: 55px 30px;
     box-sizing: border-box;
 }
+.contents p {
+    font-family: 'Gilroy-Regular';
+    font-size: 22px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.contents ul li {
+    font-family: 'Gilroy-Regular';
+    font-size: 22px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.dost {
+    list-style: disc;
+    margin-left: 25px;
+}
 main {
     background: linear-gradient(250.6deg, rgba(3, 176, 71, 0.8) -49.48%, #03B047 100%);
 }
@@ -728,8 +746,8 @@ input[type="range"]::-ms-thumb{
 .SliderDots .slick-dots li button {
     font-size: 0;
     box-sizing: border-box;
-    width: 8px;
-    height: 13px;
+    min-width: 8px;
+    min-height: 13px;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     background: transparent;
@@ -747,8 +765,8 @@ input[type="range"]::-ms-thumb{
 .partnersSliderDots .slick-dots li button {
     font-size: 0;
     box-sizing: border-box;
-    width: 8px;
-    height: 13px;
+    min-width: 8px;
+    min-height: 13px;
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     background: transparent;
@@ -1087,7 +1105,7 @@ input[type="range"]::-ms-thumb{
     cursor: pointer;  
     display: flex;
     align-items: center;
-    font-family: 'Nekst-Regular', sans-serif;
+    font-family: 'Nekst-Bold', sans-serif;
     font-size: 18px;
     padding-left: 16px;
     padding-right: 50px;
@@ -1121,12 +1139,12 @@ input[type="range"]::-ms-thumb{
 }
 .contents {
 	display: none;
-	background: #FFFAFA;
 	padding: 15px;
-    font-family: 'Nekst-Regular', sans-serif;
-    font-size: 18px;
-    line-height: 150%;
+    font-family: 'Gilroy-Regular';
+    font-size: 22px;
+    line-height: 160%;
     color: #111B25;
+    border: 1px solid #EDEDED;
 }
 .calculator {
     position: relative;
@@ -1304,14 +1322,47 @@ main h2 {
 .navNumber {
     list-style: decimal !important;
 }
-
-
-
-
-
-
-
-
+.questionsPage {
+    display: flex;
+    align-items: center;
+}
+.questionsPageLeft {
+    margin-right: 30px;
+}
+.questionsPageRight {
+    background: #FFFFFF;
+    box-shadow: 4px 7px 20px rgba(80, 80, 80, 0.25);
+    border-radius: 20px;
+}
+.questionsMain {
+    padding-top: 140px;
+}
+.questionsMain .policyNavigation {
+    max-width: 1290px;
+    margin: 0 auto 40px auto;
+}
+.questionsMain .policyNavigation a {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+.questionsMain .policyNavigation .policyNavigationLink {
+    color: #FFFFFF !important;
+    opacity: 1;
+}
+.questionsPageLeft h2 {
+    font-family: 'Nekst-Bold', sans-serif;
+    font-size: 46px;
+    line-height: 55px;
+    color: #111B25;
+    margin-bottom: 40px;
+}
+.questionsPageLeft > p {
+    font-family: 'Nekst-Regular', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #111B25;
+    margin-bottom: 20px;
+}
 
 
 
@@ -1501,6 +1552,20 @@ main h2 {
     .calculator {
         padding-top: 30px;
     }
+    .questionsPage {
+        flex-direction: column-reverse;
+    }
+    .questionsMain .wrapper {
+        max-width: 90%;
+    }
+    .questionsMain .policyNavigation {
+        max-width: 90%;
+        margin-top: 40px;
+    }
+    .questionsMain .wrapper .questionsPageLeft {
+        width: 100%;
+        text-align: center;
+    }
 }
 @media (max-width: 767px) {
     .navigationFlex {
@@ -1650,6 +1715,13 @@ main h2 {
         font-size: 30px;
         line-height: 36px; 
     }
+    .questionsPageLeft h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .questionsPageLeft > p {
+        font-size: 16px;
+    }
     .credit h2 {
         font-size: 30px;
         line-height: 36px;
@@ -1781,6 +1853,21 @@ main h2 {
     }
     .partnersSlider .slick-slide {
         width: 100%;
+    }
+    .questionsMain .wrapper {
+        padding: 20px 10px;
+    }
+    .questionsPageRight {
+        width: 100%;
+    }
+    .questionsMain {
+        padding-top: 70px;
+    }
+    .heading {
+        text-align: left;
+    }
+    .contents {
+        text-align: left !important;
     }
 }
 @media (max-width: 375px) {
