@@ -1721,19 +1721,357 @@ main h2 {
     padding-bottom: 140px;
     position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.pay {
+    display: flex;
+    justify-content: center !important;
+}
+.payMain {
+    background: linear-gradient(250.6deg, rgba(3, 176, 71, 0) -49.48%, #03B047 100%);
+    padding: 70px 0 110px 0;
+}
+.payMain .wrapper {
+    background: transparent !important;
+    max-width: 630px;
+}
+.payMainContent {
+    background: #FFFFFF;
+    box-shadow: 4px 7px 20px rgba(80, 80, 80, 0.25);
+    border-radius: 20px;
+    padding: 30px;
+}
+.payMainContentTop {
+    border: 1px solid #111B25;
+    border-radius: 20px;
+    padding: 26px 0;
+    text-align: center;
+}
+.payForm1 form{
+    display: flex;
+    flex-direction: column;
+}
+.payForm1 {
+    margin-top: 40px;
+}
+.payMainContent > p {
+    font-family: 'Nekst-Bold', sans-serif !important;
+    font-size: 24px;
+    line-height: 29px;
+    color: #111B25;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.payMainContent > p span {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #111B25;
+    margin-right: 20px;
+}
+.payForm1 > p {
+    font-family: 'Nekst-Bold', sans-serif !important;
+    font-size: 24px;
+    line-height: 29px;
+    color: #111B25;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.payForm1 > p span {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #111B25;
+    margin-right: 20px;
+}
+.payMainContent form input{
+    padding: 12px 0px 12px 20px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.32);
+    width: 100%;
+}
+.payMainContent form input::placeholder {
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.32);
+}
+.payLabel {
+    display: flex;
+    margin-bottom: 16px;
+}
+.payLabel > input {
+    box-sizing: border-box;
+    min-width: 20px;
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid #111B25;
+    border-radius: 3px;
+}
+.payLabel label {
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 120%;
+    color: #797979;
+    margin-left: 10px;
+}
+.phoneFlag {
+    position: relative;
+}
+.phoneFlag::after {
+    content: "";
+    background: url(../img/ukraine.png);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 14px;  
+}
+.phoneFlag input{
+    padding-left: 60px !important;
+}
+.payMainContent form input.paySubmit {
+    background: #03B047;
+    border-radius: 30px;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    margin-bottom: 30px;
+}
+.payForm1 form {
+    max-height: 500px;
+    transition: max-height 1s; 
+}
+#payForm1.hidden {
+    -webkit-transition: max-height 1s; 
+    -moz-transition: max-height 1s; 
+    -ms-transition: max-height 1s; 
+    -o-transition: max-height 1s; 
+    overflow: hidden;
+    max-height: 0;
+}
+#payForm2.hidden {
+    -webkit-transition: max-height 1s; 
+    -moz-transition: max-height 1s; 
+    -ms-transition: max-height 1s; 
+    -o-transition: max-height 1s; 
+    overflow: hidden;
+    max-height: 0;
+}
+.likeAdd {
+    font-size: 0 !important;
+    background: url(../img/like.png);
+    border: none !important;
+}
+#payForm2 {
+    -webkit-transition: max-height 1s; 
+    -moz-transition: max-height 1s; 
+    -ms-transition: max-height 1s; 
+    -o-transition: max-height 1s; 
+    overflow: hidden;
+    max-height: 0;  
+}
+#payForm3 {
+    -webkit-transition: max-height 1s; 
+    -moz-transition: max-height 1s; 
+    -ms-transition: max-height 1s; 
+    -o-transition: max-height 1s; 
+    overflow: hidden;
+    max-height: 0;    
+}
+#payForm2.visible {
+    max-height: 1300px;
+    transition: max-height 1s; 
+    transition-delay:1s;
+}
+#payForm3.visible {
+    max-height: 1300px;
+    transition: max-height 1s; 
+    transition-delay:1s;
+}
+input:required:valid {
+    border: 2px solid #444BD3 !important;
+    background: transparent !important;
+}
+.invalid {
+    border: 2px solid red !important;
+    background-color: pink;
+}
+.textAfter select {
+    padding: 12px 0px 12px 20px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.32);
+    width: 100%;  
+    padding-left: 50px !important;   
+    padding-right: 50px !important; 
+    background: url(../img/Vector.svg) no-repeat 97%;
+    -webkit-appearance: none;
+}
+.textAfter {
+    position: relative;
+}
+.textAfter input {
+    padding-left: 50px !important;
+}
+.textAfter:after{
+    content: "";
+    background: url(../img/IconBASE.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: 14px;  
+}
+#payForm2 textarea {
+    padding: 6px 16px 5px;
+    height: 148px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.32);
+    resize: none;
+    width: 100%;
+    margin-bottom: 16px;
+}
+textarea::placeholder {
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.32);
+}
+.checboxContainer {
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.checboxSection {
+    width: 142px;
+}
+.checboxSection6 {
+    display: flex;
+    align-items: center;
+}
+.checboxSection label {
+    display: flex;
+    align-items: center;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.32);
+    margin-bottom: 16px;
+}
+.checboxSection label input {
+    width: 28px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.inputFile {
+    position: relative;
+    padding: 12px 0px 12px 20px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.32);
+    margin-bottom: 20px;
+}
+.inputFile::after {
+    content: "";
+    background: url(../img/file.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 13.5px;
+    top: 14.5px;
+}
+.inputFile input {
+    opacity:0.0;
+    filter: alpha(opacity=0);
+}
+.recaptcha img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+.btnSubmit {
+    height: 52px;
+    background: #03B047;
+    border-radius: 30px;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+.closePopapForm {
+    height: 100px;
+}
+.closePopapForm .popupContainer {
+    height: 100%;
+}
+.closePopapForm .popupContainer > .close-popup {
+    position: static;
+    height: 52px;
+    width: 100%;
+    padding: 15px 0;
+    background: #03B047;
+    border-radius: 30px;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 
 
@@ -1938,6 +2276,9 @@ main h2 {
         flex-direction: column;
         width: 65%;
     }
+    .payMain {
+        padding-top: 150px;
+    }
     header {
         height: 130px;
     }
@@ -2053,6 +2394,13 @@ main h2 {
     }
     .openBurger {
         display: block;
+    }
+    .payMain .wrapper {
+        max-width: 100%;
+        padding: 0 32px !important;
+    }
+    .payForm1 form {
+        max-height: 600px;
     }
     .parallax {
         display: none;
@@ -2193,6 +2541,32 @@ main h2 {
 
     .microMainContent p {
         font-size: 14px;
+    }
+    .payMainContent {
+        padding: 15px;
+    }
+    .payMain .wrapper {
+        padding: 0 16px !important;
+    }
+    .payLabel label {
+        font-size: 14px;
+    }
+    .payMainContent > p {
+        font-size: 18px;
+    }
+    .closePopapForm .popupContainer > .close-popup {
+        font-size: 14px;
+        height: 100%;
+    }
+    .closePopapForm > .close-popup {
+        top: 8px;
+        right: 8px;
+    }
+    .payForm1 > p {
+        font-size: 18px;
+    }
+    .checboxContainer {
+        width: 100%;
     }
     .microMainContent ul li {
         font-size: 14px;
