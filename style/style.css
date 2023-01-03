@@ -67,16 +67,21 @@
     padding: 55px 30px;
     box-sizing: border-box;
 }
+.contents {
+    text-align: left;
+    font-size: 20px !important;
+}
 .contents p {
     font-family: 'Gilroy-Regular';
-    font-size: 22px;
+    font-size: 20px;
     line-height: 160%;
     color: #000000;
     margin-bottom: 10px;
+    text-align: left;
 }
 .contents ul li {
     font-family: 'Gilroy-Regular';
-    font-size: 22px;
+    font-size: 20px;
     line-height: 160%;
     color: #000000;
     margin-bottom: 10px;
@@ -621,7 +626,7 @@ input[type="range"]::-ms-thumb{
     overflow: hidden;
     max-width: 1210px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 .reviews .wrapper {
     overflow: hidden;
@@ -669,7 +674,6 @@ input[type="range"]::-ms-thumb{
     position: absolute;
     left: 0;
     top: 60%;
-    transform: translateY(-60%);
     background: url(../img/arrowSlider.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -681,13 +685,13 @@ input[type="range"]::-ms-thumb{
 .SliderNext {
     position: absolute;
     right: 0;
-    top: 52%;
+    top: 60%;
     background: url(../img/arrowSlider.svg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 13px;
     height: 24px;
-    transform: rotate(180deg) translateY(-60%);
+    transform: rotate(180deg);
     font-size: 0;
     border: none;
 }
@@ -881,8 +885,14 @@ input[type="range"]::-ms-thumb{
     color: #03B047;
     transition: all 0.3s;
 }
+.spans {
+    text-decoration: underline;
+}
+.mobileImg {
+    display: none;
+}
 .partners {
-    padding:64px 0;
+    padding:140px 0;
 }
 .partners h2 {
     font-family: 'Nekst-Bold', sans-serif;
@@ -1113,11 +1123,12 @@ input[type="range"]::-ms-thumb{
     cursor: pointer;  
     display: flex;
     align-items: center;
-    font-family: 'Nekst-Bold', sans-serif;
+    font-family: 'Nekst-Regular', sans-serif;
     font-size: 18px;
     padding-left: 16px;
     padding-right: 50px;
     line-height: 150%;
+    text-align: left;
     color: #111B25;
     position: relative;
 }
@@ -1133,7 +1144,7 @@ input[type="range"]::-ms-thumb{
     background-repeat: no-repeat;
     background-size: contain;
     width: 14px;
-    height: 24px;
+    height: 9px;
     display: flex;
     position: absolute;
     right: 25px;
@@ -2276,6 +2287,9 @@ textarea::placeholder {
         flex-direction: column;
         width: 65%;
     }
+    .questionsPageLeft {
+        margin-right: 0;
+    }
     .payMain {
         padding-top: 150px;
     }
@@ -2394,6 +2408,15 @@ textarea::placeholder {
     }
     .openBurger {
         display: block;
+    }
+    .heading {
+        font-size: 18px;
+    }
+    .contents p {
+        font-size: 18px;
+    }
+    .contents {
+        font-size: 18px !important;
     }
     .payMain .wrapper {
         max-width: 100%;
@@ -2527,8 +2550,37 @@ textarea::placeholder {
     .wrapper {
         padding: 0 16px;
     }
+    .workBottom {
+        position: relative;
+    }
+    .displayImg {
+        display: none;
+    }
+    .mobileImg {
+        display: block;
+    }
+    .workCenter {
+        position: absolute;
+    }
+    .workBottom {
+        margin-top: 270px;
+    }
+    .contents {
+        font-size: 14px !important;
+    }
     .articleSliderArrowContainer {
         flex-direction: column;
+    }
+    .footerTopContainer ul li img{
+        margin-right: 10px;
+        min-width: 18px;
+        height: 18px;
+        max-width: 18px;
+        object-fit: contain;
+    }
+    .footerTopContainer ul li {
+        display: flex;
+        align-items: center;
     }
     .articlePageItemSection p {
         font-size: 14px;
@@ -2606,10 +2658,16 @@ textarea::placeholder {
         margin-bottom: 200px;
     }
     .reviewsSlider {
-        width: 100% !important;
+        width: 300px !important;
+    }
+    .SliderNext {
+        top: 40%;
+    }
+    .SliderPrev {
+        top: 40%;
     }
     .reviewsItem {
-        width: 100% !important;
+        width: 300px !important;
     }
     .calculator {
         overflow: hidden;
@@ -2769,8 +2827,32 @@ textarea::placeholder {
     .partnersSlider {
         overflow: hidden;
     }
-    .partnersSlider .slick-slide {
+    .partnersSlider {
         width: 100%;
+    }
+    .partnersSlider .slick-list {
+        padding: 0 !important;
+    }
+    .reviewsItemAvatarText {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .partners {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partnersSliderItem {
+        width: 162px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .partnersSliderItem {
+        box-shadow: none;
+    }
+    .partnersSliderItem img{
+        max-width: 85%;
     }
     .questionsMain .wrapper {
         padding: 20px 10px;
@@ -2818,6 +2900,12 @@ textarea::placeholder {
         height: 200px;
         border-radius: 20px 20px 0 0;
     }
+    .reviewsSlider {
+        width: 200px !important;
+    }
+    .reviewsItem {
+        width: 200px !important;
+    }
     .menu .registrationBtn {
         font-size: 20px;
         line-height: 25px;
@@ -2828,9 +2916,6 @@ textarea::placeholder {
     .workBottomSection img {
         width: 50px;
         height: 50px;
-    }
-    .reviewsSlider {
-        width: 100% !important;
     }
     .reviewsItemAvatarText {
         flex-direction: column;

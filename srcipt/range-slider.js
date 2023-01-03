@@ -9,13 +9,13 @@ const valuePercent = 0.0001;
 
 function rangeMoney(){
     rangePercent = (valueMoney.value / valueMoney.max)*100;
-    valueMoney.style.background = `linear-gradient(to right, #03B047 ${rangePercent}%, #C6BAFB ${rangePercent}%)`;
+    valueMoney.style.background = `linear-gradient(to right, #03B047 ${rangePercent}%, #DDDDDD ${rangePercent}%)`;
     innerMoney.textContent = valueMoney.value;
 
     sum2.textContent = valueMoney.value + " грн.";
 
     rangeDate = (valueDate.value / valueDate.max)*100;
-    valueDate.style.background = `linear-gradient(to right, #03B047 ${rangeDate}%, #C6BAFB ${rangeDate}%)`;
+    valueDate.style.background = `linear-gradient(to right, #03B047 ${rangeDate}%, #DDDDDD ${rangeDate}%)`;
     innerDate.textContent = valueDate.value;
 
     letDate = (Number(valueDate.value) * Number(valuePercent));

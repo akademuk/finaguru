@@ -43,7 +43,8 @@ $(document).ready(function(){
             settings: {
                 slidesToScroll: 1,
                 slidesToShow: 1,
-                
+                variableWidth: true,
+                centerMode: true,
             }
         },
         ]
