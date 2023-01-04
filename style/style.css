@@ -1109,7 +1109,7 @@ input[type="range"]::-ms-thumb{
     flex-wrap: wrap;
     justify-content: center;
 }
-.servicesContent p {
+.servicesContent a {
     font-family: 'Nekst-Regular', sans-serif;
     font-size: 18px;
     line-height: 22px;
@@ -1121,9 +1121,10 @@ input[type="range"]::-ms-thumb{
     margin-right: 30px;
     margin-bottom: 30px;
     transition: all 0.3s;
+    text-decoration: none;
     border: 1px solid transparent;
 }
-.servicesContent p:hover {
+.servicesContent a:hover {
     background: transparent;
     border: 1px solid #03B047;
     transition: all 0.3s;
@@ -2594,12 +2595,6 @@ input[type=checkbox]:checked + label:before{
     .partnersSlider .slick-list .slick-track {
         display: flex ;
     }
-    .servicesContent {
-        display: none;
-    }
-    .servicesAccardion {
-        display: block;
-    }
     .footerTopContainer {
         flex-direction: row;
     }
@@ -2622,6 +2617,9 @@ input[type=checkbox]:checked + label:before{
 @media (max-width: 576px) {
     .wrapper {
         padding: 0 16px;
+    }
+    .servicesContent {
+        text-align: center;
     }
     .workBottom {
         position: relative;
