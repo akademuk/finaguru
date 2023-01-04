@@ -5,8 +5,8 @@ $(document).ready(function(){
         slidesToScroll: 1,
         dots: false,
         arrows: true,
-        variableWidth: true,
         prevArrow: $('.articleSliderPrev'),
         nextArrow: $('.articleSliderNext'),
+        cssEase: 'linear',
     });
 });

@@ -67,9 +67,29 @@
     padding: 55px 30px;
     box-sizing: border-box;
 }
+.ConditionsNav a:nth-of-type(1) {
+    color: #fff !important;
+}
+.ConditionsNav a:nth-of-type(2) {
+    color: #fff !important;
+    opacity: 0.5;
+}
 .contents {
     text-align: left;
     font-size: 20px !important;
+}
+.ConditionsMain .wrapper {
+    background: transparent !important;
+}
+.ConditionsMain {
+    padding-top: 140px !important;
+}
+.ConditionsMain .wrapper .conditions {
+    width: 100% !important;
+    padding-top: 0;
+}
+.ConditionsMain .wrapper .conditions h2 {
+    text-align: left !important;
 }
 .contents p {
     font-family: 'Gilroy-Regular';
@@ -78,6 +98,9 @@
     color: #000000;
     margin-bottom: 10px;
     text-align: left;
+}
+.ConditionsMain {
+
 }
 .contents ul li {
     font-family: 'Gilroy-Regular';
@@ -1528,7 +1551,7 @@ main h2 {
     overflow: hidden;
 }
 .articlePageItem {
-    width: 97% !important;
+    width: 810px !important;
 }
 .articleSlider .slick-list {
     overflow: hidden;
@@ -2083,10 +2106,45 @@ textarea::placeholder {
     box-sizing: border-box;
     text-align: center;
 }
+input[type=checkbox] {
+	display: none;
+}
 
-
-
-
+input[type=checkbox]:checked + label:before{
+	content: "";
+	background: url(../img/Vectos.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    width: 28px;
+    height: 28px;
+    line-height: 15px;
+}
+.checboxSection {
+    padding-left: 40px;
+    position: relative;
+}
+.checboxSection label:before {
+	content: "";
+	display: inline-block;
+	width: 28px;
+    height: 28px;
+    background: #FFFFFF;
+    border: 1px solid rgba(18, 17, 39, 0.56);
+    border-radius: 4px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+    top: -5px;
+	bottom: 1px;
+}
+#payForm1 .checboxSection {
+    width: 100%;
+    margin-top: 20px;
+}
+#payForm1 .checboxSection label{
+    padding-right: 30px;
+}
 
 
 
@@ -2121,9 +2179,6 @@ textarea::placeholder {
 
 
 @media (max-width: 1450px) {
-    .articleSlider {
-        max-width: 550px;
-    }
     .articleSliderArrowContainer a {
         width: 100px;
     }
@@ -2136,6 +2191,18 @@ textarea::placeholder {
     }
     .microMain {
         padding: 0 64px !important;
+    }
+    .articleSlider  {
+        width: 100% !important;
+    }
+    .articlePageItem {
+        width: 100% !important;
+    }
+    .articlePageItemSection {
+        width: 96% !important;
+    }
+    .articleSliderArrow {
+        max-width: 50%;
     }
 }
 
@@ -2210,6 +2277,12 @@ textarea::placeholder {
         align-items: center;
     }
     .articleSliderArrow {
+        max-width: 100%;
+    }
+    .articlePageItemSection img {
+        width: 100%;
+    }
+    .articleSliderArrow {
         width: 100%;
         margin-right: 0;
     }
@@ -2218,9 +2291,6 @@ textarea::placeholder {
     }
     .articleSlider {
         max-width: 100%;
-    }
-    .articlePageItemSection img {
-        width: 100%;
     }
     .articleSliderArrow {
         margin-bottom: 50px;
@@ -2289,6 +2359,9 @@ textarea::placeholder {
     }
     .questionsPageLeft {
         margin-right: 0;
+    }
+    .ConditionsMain .wrapper {
+        padding: 0 32px !important;
     }
     .payMain {
         padding-top: 150px;
@@ -2555,6 +2628,15 @@ textarea::placeholder {
     }
     .displayImg {
         display: none;
+    }
+    .ConditionsMain .wrapper {
+        padding: 0 16px !important;
+    }
+    .ConditionsMain .wrapper .services {
+        padding-top: 0;
+    }
+    .heading {
+        font-size: 14px !important;
     }
     .mobileImg {
         display: block;
