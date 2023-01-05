@@ -2621,6 +2621,43 @@ input[type=checkbox]:checked + label:before{
     .servicesContent {
         text-align: center;
     }
+    .servicesContent {
+        display: flex;
+        flex-direction: column;
+    }
+    .servicesContent a{
+        min-height: 62px;
+        background: #FFFFFF;
+        border-bottom: 1px solid #EDEDED;
+        margin-right: 0;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        padding-right: 50px;
+        border-radius: 0;
+        text-align: left;
+    }
+    .servicesContent a:before {
+        content: "";
+        background: url(../img/acardionArrow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 14px;
+        width: 24px;
+        display: flex;
+        position: absolute;
+        right: 15px;
+        top: 35px;
+        transform: rotate(-90deg);
+    }
+    .servicesContent a:hover {
+        background: #fff !important;
+        border: none;
+        border-bottom: 1px solid #EDEDED;
+        color: #111B25;
+    }
     .workBottom {
         position: relative;
     }
