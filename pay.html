@@ -194,21 +194,21 @@
             });
     </script>
     <script>
-        // let paForm1 = document.getElementById("payForm1");
-        // let paForm2 = document.getElementById("payForm2");
-        // let paForm3 = document.getElementById("payForm3");
-        // let like = document.getElementById("like");
+        let paForm1 = document.getElementById("payForm1");
+        let paForm2 = document.getElementById("payForm2");
+        let paForm3 = document.getElementById("payForm3");
+        let like = document.getElementById("like");
             
-        //     function hide() {
-        //         paForm1.classList.add('hidden');
-        //         paForm2.classList.add('visible');
-        //         like.classList.add('likeAdd');
-	    //     }
+            function hide() {
+                paForm1.classList.add('hidden');
+                paForm2.classList.add('visible');
+                like.classList.add('likeAdd');
+	        }
 
-        //     function hide2() {
-        //         paForm3.classList.add('visible');
+            function hide2() {
+                paForm3.classList.add('visible');
               
-	    //     }
+	        }
         $(document).ready(function() {
             $("#btnSubmit2").on('click', function() {
                 $("#payForm1").addClass("hidden");
