@@ -61,3 +61,25 @@ yearSelect.value = currentDate.getFullYear();
 document.querySelector('.date-picker').appendChild(daySelect);
 document.querySelector('.date-picker').appendChild(monthSelect);
 document.querySelector('.date-picker').appendChild(yearSelect);
+
+monthSelect.addEventListener('change', () => {
+  const selectedMonth = months[monthSelect.value];
+  const selectedYear = yearSelect.value;
+  
+  // Февраль имеет индекс 1 в массиве months
+  if (selectedMonth.value === 1 && selectedYear % 4 !== 0) {
+    // Если выбран февраль и год не високосный, то убираем дни 30 и 31 из списка
+    for (let i = days.length; i > 29; i--) {
+      daySelect.removeChild(daySelect.lastChild);
+    }
+  } else if (daySelect.childElementCount !== days.length) {
+    // Если выбран месяц, который не февраль и до этого уже была изменена длина списка дней,
+    // то восстанавливаем список дней до его первоначальной длины
+    for (let i = daySelect.childElementCount; i < days.length; i++) {
+      const option = document.createElement('option');
+      option.value = days[i];
+      option.text = days[i];
+      daySelect.appendChild(option);
+    }
+  }
+});
