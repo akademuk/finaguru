@@ -2151,7 +2151,7 @@ input[type=checkbox]:checked + label:before{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 570px;
+    width: 100%;
   }
   * {
     outline: none;
