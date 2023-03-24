@@ -2146,6 +2146,40 @@ input[type=checkbox]:checked + label:before{
 #payForm1 .checboxSection label{
     padding-right: 30px;
 }
+/* CSS */
+.date-picker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+  }
+  * {
+    outline: none;
+  }
+  .date-picker select {
+    padding: 12px 0px 12px 20px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    font-size: 18px;
+    line-height: 120%;
+    color: rgba(0, 0, 0, 0.32);
+    width: 32%;
+  }
+  
+  .date-picker select:last-child {
+    margin-right: 0;
+ }
+#day-select,
+#month-select,
+#year-select {
+    display: none;
+}
+
 
 
 
@@ -2638,6 +2672,13 @@ input[type=checkbox]:checked + label:before{
         padding-right: 50px;
         border-radius: 0;
         text-align: left;
+    }
+    .date-picker {
+        flex-direction: column;
+        width: 100%;
+    }
+    .date-picker select  {
+        width: 100%;
     }
     .servicesContent a:before {
         content: "";

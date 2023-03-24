@@ -53,7 +53,7 @@
                         <!-- <input type="submit" value="Продовжити" class="paySubmit" onclick="hide(this.form)"> -->
                     </form>
                 </div>
-                <p><span>2</span>Персональна інформація</p>
+                <p><span id="like2">2</span>Персональна інформація</p>
                 <form action="" id="payForm2">
                     <div class="textAfter">
                         <input type="text" placeholder="Input placeholder">
@@ -150,13 +150,18 @@
                         Документ
                         <input type="file">
                     </div>
+                    <div class="date-picker">
+                        <select id="day-select"></select>
+                        <select id="month-select"></select>
+                        <select id="year-select"></select>
+                    </div>
                     <div class="recaptcha">
                         <img src="img/recaptcha.png" alt="">
                     </div>
                     <button class="btnSubmit" id="btnSubmit3">Продовжити</button>
                     <!-- <input type="submit" value="Продовжити" class="paySubmit"> -->
                 </form>
-                <p><span>3</span>Форма зайнятості</p>
+                <p><span id="like3">3</span>Форма зайнятості</p>
                 <form action="" id="payForm3">
                     <input type="text" placeholder="Text">
                     <input type="text" placeholder="Text">
@@ -188,6 +193,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="srcipt/popup.js"></script>
+    <script src="srcipt/date.js"></script>
     <script>
         $(function(){
             $("#phone").mask("(+380)99 999-99-99");
@@ -198,6 +204,8 @@
         let paForm2 = document.getElementById("payForm2");
         let paForm3 = document.getElementById("payForm3");
         let like = document.getElementById("like");
+        let like2 = document.getElementById("like2");
+        let like3 = document.getElementById("like3");
             
             function hide() {
                 paForm1.classList.add('hidden');
@@ -213,15 +221,19 @@
             $("#btnSubmit2").on('click', function() {
                 $("#payForm1").addClass("hidden");
                 $("#payForm2").addClass("visible");
+                like.classList.add('likeAdd');
             });
             $("#btnSubmit3").on('click', function() {
                 $("#payForm1").addClass("hidden");
                 $("#payForm2").removeClass("visible");
                 $("#payForm3").addClass("visible");
+                like2.classList.add('likeAdd');
+
                 return false;
             });
             $("#closeForm").on('click', function() {
                 $("#payForm3").removeClass("visible");
+                like3.classList.add('likeAdd');
                 return true;
             });
         });
